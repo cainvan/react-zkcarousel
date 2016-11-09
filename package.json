@@ -1,0 +1,48 @@
+{
+  "name": "react-zkcarousel",
+  "version": "1.0.0",
+  "description": "carousel component",
+  "main": "./lib/index.js",
+  "scripts": {
+    "start": "webpack-dev-server --colors  --progress",
+    "test": "./example/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cainvan/react-zkcarousel.git"
+  },
+  "keywords": [
+    "react",
+    "carousel"
+  ],
+  "author": "cain_van@163.com",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^15.2.1"
+  },
+  "devDependencies": {
+    "react": "^15.2.1",
+    "react-dom": "^15.3.2",
+    "react-slick": "^0.14.5",
+    "extract-text-webpack-plugin":"^1.0.1",
+    "babel-core": "^6.13.2",
+    "babel-loader": "^6.2.4",
+    "babel-plugin-antd": "^0.4.1",
+    "babel-polyfill": "^6.9.1",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-react": "^6.11.1",
+    "babel-preset-stage-0": "^6.5.0",
+    "babel-preset-stage-2": "^6.17.0",
+    "connect-rest": "^2.7.0",
+    "css-loader": "^0.23.1",
+    "style-loader": "^0.13.0",
+    "jsx-loader": "^0.13.2",
+    "classnames": "^2.2.5",
+    "webpack": "^1.12.14",
+    "webpack-dev-server": "^1.14.1"
+  },
+  "bugs": {
+    "url": "https://github.com/cainvan/react-zkcarousel/issues"
+  },
+  "homepage": "https://github.com/cainvan/react-zkcarousel#readme"
+}
