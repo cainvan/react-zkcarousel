@@ -6,8 +6,8 @@ export default class MyCarousel extends React.Component {
   constructor(props) {
     super(props);
   }
-  handleItemClick(index,href,event) {
-    console.log(href);
+  handleItemClick(index,event) {
+    console.log(event.target);
   }
   render() {
     let data = [
@@ -27,7 +27,7 @@ export default class MyCarousel extends React.Component {
       }
     ];
     return (
-      <Carousel data={data} autoplay link='[url]/[id]' click={this.handleItemClick}/>
+      <Carousel data={data} autoplay link='[url]/[id]'/>
     );
   }
 };

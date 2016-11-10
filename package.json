@@ -1,6 +1,6 @@
 {
   "name": "react-zkcarousel",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "carousel component",
   "main": "./lib/index.js",
   "scripts": {

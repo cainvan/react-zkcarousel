@@ -64,16 +64,12 @@ link='[url]?id=[id]' //普通url中的id传递
 ###### fade（bool）：
 淡入淡出，默认false
 
-###### clickInto（bool）：
-点击是否跳转链接，默认为true
-
 ###### click （func）：
-点击事件，当clickInto设置为false时配置。事件回传三个参数。
+点击事件，当link参数没有配置时，必需实现click方法。事件回传两个参数。
 
 ```
 1、点击的那张图的index；
-2、拼接后的链接href；
-3、点击事件event。
+2、点击事件event。
 ```
 
 #### 示例：

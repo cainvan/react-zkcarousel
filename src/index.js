@@ -22,7 +22,6 @@ export default class Carousel extends React.Component {
         infinite: true,     // 是否循环
         speed: 500,         // 动画速度
         fade: false,        // 淡入淡出
-        clickInto : true,   //点击后跳转
     }
 
     componentDidMount() {
@@ -43,19 +42,13 @@ export default class Carousel extends React.Component {
                         var arrVal=val.replace("[",'').replace("]",'');
                         href=href.replace(val,( typeof rowData[arrVal]!='undefined')?rowData[arrVal]:'');
                     })
-                    if (this.props.clickInto) {
-                        lis.push(
-                            <div key={index}><a href={href}><img src={rowData.src}/></a></div>
-                        );
-                    }else {
-                        lis.push(
-                            <div key={index} onClick={this.props.click.bind(thiz,index,href)}><img src={rowData.src}/></div>
-                        );
-                    }
+                    lis.push(
+                        <div key={index}><a href={href}><img src={rowData.src}/></a></div>
+                    );
                 }
             }else {
                 lis.push(
-                    <div key={index} onClick={this.props.click.bind(thiz,index,'')}><img src={rowData.src}/></div>
+                    <div key={index} onClick={this.props.click.bind(thiz,index)}><img src={rowData.src}/></div>
                 );
             }
         })
