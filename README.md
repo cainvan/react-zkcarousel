@@ -1,5 +1,5 @@
 ### Carousel 轮播组件使用介绍
-
+###### 版本：1.0.1
 ![Image](http://upload-images.jianshu.io/upload_images/2541263-955700175b6cb000.gif?imageMogr2/auto-orient/strip)
 
 #### 安装
