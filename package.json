@@ -19,12 +19,12 @@
   "author": "cain_van@163.com",
   "license": "ISC",
   "dependencies": {
-    "react": "^15.2.1"
-  },
-  "devDependencies": {
     "react": "^15.2.1",
     "react-dom": "^15.3.2",
     "react-slick": "^0.14.5",
+    "classnames": "^2.2.5"
+  },
+  "devDependencies": {
     "extract-text-webpack-plugin":"^1.0.1",
     "babel-core": "^6.13.2",
     "babel-loader": "^6.2.4",
@@ -38,7 +38,6 @@
     "css-loader": "^0.23.1",
     "style-loader": "^0.13.0",
     "jsx-loader": "^0.13.2",
-    "classnames": "^2.2.5",
     "webpack": "^1.12.14",
     "webpack-dev-server": "^1.14.1"
   },

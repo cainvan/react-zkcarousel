@@ -10,11 +10,6 @@ export default class Carousel extends React.Component {
             items: [],
         };
     }
-    // static propTypes = {
-    //     data : React.PropTypes.array, //轮播图数据
-    //     link : React.PropTypes.string,  // 链接字符串拼接
-    //     click : React.PropTypes.func, //点击事件
-    // }
 
     static defaultProps = {
         dots: true,         // 点
