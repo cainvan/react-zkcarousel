@@ -7886,82 +7886,7 @@
 	        "id": "4",
 	        "url": "http://localhost:8080/#/button"
 	      }];
-	      return _react2.default.createElement(
-	        _index2.default,
-	        null,
-	        _react2.default.createElement(
-	          'div',
-	          null,
-	          _react2.default.createElement(
-	            'h3',
-	            null,
-	            '1'
-	          )
-	        ),
-	        _react2.default.createElement(
-	          'div',
-	          null,
-	          _react2.default.createElement(
-	            'h3',
-	            null,
-	            '2'
-	          )
-	        ),
-	        _react2.default.createElement(
-	          'div',
-	          null,
-	          _react2.default.createElement(
-	            'h3',
-	            null,
-	            '3'
-	          )
-	        ),
-	        _react2.default.createElement(
-	          'div',
-	          null,
-	          _react2.default.createElement(
-	            'h3',
-	            null,
-	            '4'
-	          )
-	        ),
-	        _react2.default.createElement(
-	          'div',
-	          null,
-	          _react2.default.createElement(
-	            'h3',
-	            null,
-	            '5'
-	          )
-	        ),
-	        _react2.default.createElement(
-	          'div',
-	          null,
-	          _react2.default.createElement(
-	            'h3',
-	            null,
-	            '6'
-	          )
-	        ),
-	        _react2.default.createElement(
-	          'div',
-	          null,
-	          _react2.default.createElement(
-	            'h3',
-	            null,
-	            '7'
-	          )
-	        ),
-	        _react2.default.createElement(
-	          'div',
-	          null,
-	          _react2.default.createElement(
-	            'h3',
-	            null,
-	            '8'
-	          )
-	        )
-	      );
+	      return _react2.default.createElement(_index2.default, { data: data, autoplay: true, link: '[url]/[id]' });
 	    }
 	  }]);
 
@@ -29284,10 +29209,16 @@
 
 	            var thiz = this;
 	            var props = this.props;
+	            var className = 'f-carousel';
+	            if (props.vertical) {
+	                className = className + ' f-carousel-vertical';
+	            } else {
+	                className = className + ' f-carousel-banner';
+	            }
 	            if (this.props.children) {
 	                return _react2.default.createElement(
 	                    'div',
-	                    { className: 'f-carousel' },
+	                    { className: className },
 	                    _react2.default.createElement(
 	                        _reactSlick2.default,
 	                        _extends({ className: props.class }, props, { draggable: !props.fade }),
@@ -29332,7 +29263,7 @@
 	                } else {
 	                    return _react2.default.createElement(
 	                        'div',
-	                        { className: 'f-carousel' },
+	                        { className: className },
 	                        _react2.default.createElement(
 	                            _reactSlick2.default,
 	                            _extends({ className: 'slider' }, props, { draggable: !props.fade }),
